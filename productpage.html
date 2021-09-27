@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9cf12a211e.js" crossorigin="anonymous"></script>
+
+    <title>product page</title>
+    <style>
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: rgb(204, 167, 240);
+            height: 100px;
+        }
+        
+        h1 {
+            text-align: center;
+            text-transform: capitalize;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        #border {
+            background-color: rgb(180, 243, 204);
+            margin: auto;
+            animation-name: product;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: 3;
+        }
+        
+        @keyframes product {
+            0% {
+                width: 0px;
+            }
+            100% {
+                width: 300px;
+                height: 3px;
+                width: 200px;
+            }
+        }
+        
+        p {
+            text-align: center;
+            margin-left: 10%;
+            font-family: cursive;
+        }
+        
+        #container {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(180, 243, 204);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .card {
+            width: 300px;
+            height: 500px;
+            background-color: rgb(226, 243, 180);
+            margin: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-image img {
+            width: 100%;
+            height: 200px;
+        }
+        
+        .icon {
+            top: 40%;
+            right: -50px;
+            width: 15%;
+            background-color: rgb(241, 180, 241);
+            padding: 10px;
+            position: absolute;
+            transition: 1s linear;
+        }
+        
+        .icon a {
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(0, 0, 122);
+            margin: 5px 3px;
+        }
+        
+        .icon a:hover {
+            color: red;
+        }
+        
+        .card:hover .icon {
+            right: 15px;
+            opacity: 0.9;
+            color: rgb(0, 0, 122);
+        }
+        
+        .info {
+            margin-top: 50px;
+            height: 200px;
+            text-align: center;
+        }
+        
+        .info p {
+            margin-top: 30px;
+            text-align: center;
+            margin-left: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .info span {
+            color: red;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        
+        .info h2 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        button {
+            width: 50%;
+            height: 20%;
+            border: none;
+            border-radius: 30px;
+            margin-top: 20px;
+            background-color: rgb(157, 65, 243);
+            color: black;
+            font-size: 1rem;
+            font-weight: bold;
+            box-shadow: 5px 5px rgb(179, 157, 200);
+            transition: 1s linear;
+        }
+        
+        button:hover {
+            transform: scale(0.9, 0.9);
+        }
+        
+        @media only screen and (min-width:300px) and (max-width:600px) {
+            .card {
+                width: 300px;
+            }
+        }
+        
+        @media only screen and (min-width:601px) and (max-width:800px) {
+            .card {
+                width: 350px;
+                background-color: rgb(246, 181, 173);
+            }
+        }
+        
+        @media only screen and (min-width:801px) {
+            .card {
+                width: 200px;
+                background-color: rgb(246, 181, 173);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> new arrival </h1>
+        <div id="border"></div>
+        <p>watches for all...</p>
+    </header>
+
+    <section id="container">
+
+        <div class="card">
+            <div class="card-image">
+                <img src="w1.jpg" alt="oppss...">
+
+                <div class="icon">
+                    <a href="#" class="far fa-heart"></a>
+                    <a href="#" class="far fa-share-square"></a>
+                    <a href="#" class="fas fa-cart-plus"></a>
+                </div>
+            </div>
+            <div class="info">
+                <h2>Man's Watch</h2>
+                <span>1200rs/-</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, odio!</p>
+                <button>
+                    Buy now    
+                      </button>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="w2.jpg" alt="oppss...">
+                <div class="icon">
+
+                    <a href="#" class="far fa-heart"></a>
+                    <a href="#" class="far fa-share-square"></a>
+                    <a href="#" class="fas fa-cart-plus"></a>
+                </div>
+
+            </div>
+            <div class="info">
+                <h2>Man's Watch</h2>
+                <span>1200rs/-</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, odio!</p>
+                <button>
+                    Buy now    
+                        </button>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="w3.jpg" alt="oppss...">
+                <div class="icon">
+
+
+                    <a href="#" class="far fa-heart"></a>
+                    <a href="#" class="far fa-share-square"></a>
+                    <a href="#" class="fas fa-cart-plus"></a>
+
+                </div>
+            </div>
+            <div class="info">
+                <h2>woman's Watch</h2>
+                <span>1200rs/-</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, odio!</p>
+                <button>
+                    Buy now    
+                        </button>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="w4.jpg" alt="oppss...">
+                <div class="icon">
+
+                    <a href="#" class="far fa-heart"></a>
+                    <a href="#" class="far fa-share-square"></a>
+                    <a href="#" class="fas fa-cart-plus"></a>
+                </div>
+            </div>
+            <div class="info">
+                <h2>woman's Watch</h2>
+                <span>1200rs/-</span>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, odio!</p>
+                <button>
+                    Buy now   
+                         </button>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>
